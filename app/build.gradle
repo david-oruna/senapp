@@ -25,7 +25,7 @@ android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.google.mediapipe.examples.gesturerecognizer"
+        applicationId 'com.signapp'
         minSdk 24
         targetSdk 32
         versionCode 1

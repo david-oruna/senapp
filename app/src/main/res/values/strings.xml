@@ -14,9 +14,9 @@
     ~ limitations under the License.
 -->
 <resources>
-    <string name="app_name">MP Gesture Recognizer</string>
+    <string name="app_name">Signapp</string>
 
-    <string name="media_pipe">MediaPipe</string>
+    <string name="media_pipe">Signapp</string>
 
     <string name="alt_bottom_sheet_chevron">Bottom sheet expandable indicator</string>
 
