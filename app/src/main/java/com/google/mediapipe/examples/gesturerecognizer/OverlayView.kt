@@ -69,7 +69,7 @@ class OverlayView(context: Context?, attrs: AttributeSet?) :
         pointPaint.style = Paint.Style.FILL
     }
 
-    fun setIsFrontFacing(isFront: Boolean) {
+    fun setIsFrontFacing(isFront: Boolean)                                                                                                                                                                                                                                                                                                                      {
         isFrontFacing = isFront
         invalidate()
     }
