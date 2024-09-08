@@ -50,6 +50,7 @@ android {
     buildFeatures {
         viewBinding true
     }
+
 }
 
 // import DownloadMPTasks task
@@ -59,7 +60,7 @@ project.ext.TEST_ASSETS_DIR = projectDir.toString() + '/src/androidTest/assets'
 apply from: 'download_tasks.gradle'
 
 dependencies {
-
+    implementation 'org.tensorflow:tensorflow-lite-select-tf-ops:2.16.1'
     // Kotlin lang
     implementation 'androidx.core:core-ktx:1.8.0'
 
@@ -68,6 +69,8 @@ dependencies {
     implementation 'com.google.android.material:material:1.7.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'androidx.fragment:fragment-ktx:1.5.4'
+    implementation 'com.google.ai.edge.litert:litert:1.0.1'
+    implementation 'com.google.ai.edge.litert:litert-support-api:1.0.1'
     // Navigation library
     def nav_version = "2.5.3"
     implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
@@ -97,7 +100,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     // Mediapipe Library
-    implementation 'com.google.mediapipe:tasks-vision:0.10.14'
+    implementation 'com.google.mediapipe:tasks-vision:latest.release'
 
     // icons
     implementation 'com.google.android.material:material:1.7.0'

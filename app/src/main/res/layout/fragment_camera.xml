@@ -10,14 +10,25 @@
     <androidx.camera.view.PreviewView
         android:id="@+id/view_finder"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent" />
 
         <com.google.mediapipe.examples.gesturerecognizer.OverlayView
             android:id="@+id/overlay"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
-    </androidx.camera.view.PreviewView>
 
+    <TextView
+        android:id="@+id/gesture_text_view"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="#80000000"
+        android:padding="8dp"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@id/subtitle_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
