@@ -1,6 +1,8 @@
 
 # Signapp
 
+![logo](https://github.com/user-attachments/assets/4610d067-112f-426d-af48-672b30049e6b)
+
 ### Overview
 
 Signapp is an end to end deep learning project for recognizing sign language. The LSTM was trained with keypoints from videos (a sequence of 30 frames). The keypoints were obtained using MediaPipe [HandLandmarker](https://ai.google.dev/edge/mediapipe/solutions/vision/hand_landmarker). You can check the the model/ directoy for more details.
