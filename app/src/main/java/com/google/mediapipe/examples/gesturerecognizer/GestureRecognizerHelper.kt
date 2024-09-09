@@ -170,7 +170,7 @@ class GestureRecognizerHelper(
         val maxIndex = output.indices.maxByOrNull { output[it] } ?: -1
         val maxConfidence = output.maxOrNull() ?: 0f
 
-        return if (maxIndex in GESTURES.indices && maxConfidence >= 0.7f) {
+        return if (maxIndex in GESTURES.indices) {
             Pair(GESTURES[maxIndex], maxConfidence)
         } else {
             Pair("none", maxConfidence)
@@ -241,12 +241,8 @@ class GestureRecognizerHelper(
     companion object {
         const val TAG = "GestureRecognizer"
         const val MP_HAND_LANDMARKER_TASK = "hand_landmarker.task"
-        private val GESTURES = arrayOf(
-            "0", "1", "2", "3", "4", "5", "6", "7", "8", "9",
-            "A", "ADIOS", "B", "C", "D", "DISCULPA", "E", "F", "G", "GRACIAS",
-            "H", "HERMANA", "HOLA", "I", "J", "K", "L", "LL", "M", "MAMA",
-            "N", "NN", "O", "P", "PAPA", "PORFAVOR", "Q", "R", "S", "T",
-            "U", "V", "W", "X", "Y", "Z"
+        val GESTURES = arrayOf(
+          "1","2","3","a","b","c"
         )
         const val DELEGATE_CPU = 0
         const val DELEGATE_GPU = 1

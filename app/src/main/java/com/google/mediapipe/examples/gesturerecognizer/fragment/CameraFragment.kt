@@ -176,7 +176,7 @@ class CameraFragment : Fragment(), GestureRecognizerHelper.GestureRecognizerList
     override fun onResults(resultBundle: GestureRecognizerHelper.ResultBundle) {
 
         activity?.runOnUiThread {
-            if (resultBundle.confidence > .7f) {
+            if (resultBundle.results != "none") {
                 updateRecognizedGestures(resultBundle.results)
 
                 val gestureText = "${resultBundle.results} (${String.format("%.2f", resultBundle.confidence * 100)}%)"
