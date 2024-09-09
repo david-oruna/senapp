@@ -10,7 +10,7 @@ Then the model was compiled to TFLite and implemented in the Android application
 
 
 ### Testing
-![image](https://github.com/user-attachments/assets/f9deb72d-41ed-46ae-90e6-16bea207a9d1)
+![image](https://github.com/user-attachments/assets/0ecee287-c102-4a3e-967f-d3e7677861f6)
 
 
 
