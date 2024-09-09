@@ -1,7 +1,6 @@
 
-# Signapp
+# Signapp ![logo](https://github.com/user-attachments/assets/4610d067-112f-426d-af48-672b30049e6b)
 
-![logo](https://github.com/user-attachments/assets/4610d067-112f-426d-af48-672b30049e6b)
 
 ### Overview
 
