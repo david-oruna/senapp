@@ -1,13 +1,11 @@
-package com.google.mediapipe.examples.gesturerecognizer.fragment
+package com.signapp.fragment
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.EditText
-import android.widget.TextView
-import com.google.mediapipe.examples.gesturerecognizer.BaseActivity
-import com.google.mediapipe.examples.gesturerecognizer.R
+import com.signapp.BaseActivity
+import com.signapp.R
 
 class ResultActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

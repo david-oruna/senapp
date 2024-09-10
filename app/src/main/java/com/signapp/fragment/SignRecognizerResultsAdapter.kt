@@ -13,19 +13,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.google.mediapipe.examples.gesturerecognizer.fragment
+package com.signapp.fragment
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.google.mediapipe.examples.gesturerecognizer.databinding.ItemGestureRecognizerResultBinding
 import com.google.mediapipe.tasks.components.containers.Category
+import com.signapp.databinding.ItemGestureRecognizerResultBinding
 import java.util.Locale
 import kotlin.math.min
 
-class GestureRecognizerResultsAdapter :
-    RecyclerView.Adapter<GestureRecognizerResultsAdapter.ViewHolder>() {
+class SignRecognizerResultsAdapter :
+    RecyclerView.Adapter<SignRecognizerResultsAdapter.ViewHolder>() {
     companion object {
         private const val NO_VALUE = "--"
     }

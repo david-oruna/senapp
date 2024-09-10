@@ -1,4 +1,4 @@
-package com.google.mediapipe.examples.gesturerecognizer.fragment
+package com.signapp.fragment
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -14,19 +14,19 @@ import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
-import com.google.mediapipe.examples.gesturerecognizer.GestureRecognizerHelper
-import com.google.mediapipe.examples.gesturerecognizer.MainViewModel
-import com.google.mediapipe.examples.gesturerecognizer.databinding.FragmentCameraBinding
+import com.signapp.SignRecognizerHelper
+import com.signapp.MainViewModel
+import com.signapp.databinding.FragmentCameraBinding
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
 import java.util.concurrent.TimeUnit
 
-class CameraFragment : Fragment(), GestureRecognizerHelper.GestureRecognizerListener {
+class CameraFragment : Fragment(), SignRecognizerHelper.GestureRecognizerListener {
 
     private var _fragmentCameraBinding: FragmentCameraBinding? = null
     private val fragmentCameraBinding get() = _fragmentCameraBinding!!
 
-    private lateinit var gestureRecognizerHelper: GestureRecognizerHelper
+    private lateinit var gestureRecognizerHelper: SignRecognizerHelper
     private val viewModel: MainViewModel by activityViewModels()
     private var preview: Preview? = null
     private var imageAnalyzer: ImageAnalysis? = null
@@ -75,7 +75,7 @@ class CameraFragment : Fragment(), GestureRecognizerHelper.GestureRecognizerList
 
         backgroundExecutor = Executors.newSingleThreadExecutor()
 
-        gestureRecognizerHelper = GestureRecognizerHelper(
+        gestureRecognizerHelper = SignRecognizerHelper(
             minHandDetectionConfidence = viewModel.currentMinHandDetectionConfidence,
             minHandTrackingConfidence = viewModel.currentMinHandTrackingConfidence,
             minHandPresenceConfidence = viewModel.currentMinHandPresenceConfidence,
@@ -173,7 +173,7 @@ class CameraFragment : Fragment(), GestureRecognizerHelper.GestureRecognizerList
         imageAnalyzer?.targetRotation = fragmentCameraBinding.viewFinder.display.rotation
     }
 
-    override fun onResults(resultBundle: GestureRecognizerHelper.ResultBundle) {
+    override fun onResults(resultBundle: SignRecognizerHelper.ResultBundle) {
 
         activity?.runOnUiThread {
             if (resultBundle.results != "none") {

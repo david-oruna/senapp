@@ -1,4 +1,4 @@
-package com.google.mediapipe.examples.gesturerecognizer
+package com.signapp
 
 import android.os.Bundle
 import android.widget.FrameLayout

@@ -13,18 +13,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.google.mediapipe.examples.gesturerecognizer
+package com.signapp
 
 import androidx.lifecycle.ViewModel
 
 class MainViewModel : ViewModel() {
-    private var _delegate: Int = GestureRecognizerHelper.DELEGATE_CPU
+    private var _delegate: Int = SignRecognizerHelper.DELEGATE_CPU
     private var _minHandDetectionConfidence: Float =
-        GestureRecognizerHelper.DEFAULT_HAND_DETECTION_CONFIDENCE
-    private var _minHandTrackingConfidence: Float = GestureRecognizerHelper
-        .DEFAULT_HAND_TRACKING_CONFIDENCE
-    private var _minHandPresenceConfidence: Float = GestureRecognizerHelper
-        .DEFAULT_HAND_PRESENCE_CONFIDENCE
+        SignRecognizerHelper.DEFAULT_HAND_DETECTION_CONFIDENCE
+    private var _minHandTrackingConfidence: Float =
+        SignRecognizerHelper.DEFAULT_HAND_TRACKING_CONFIDENCE
+    private var _minHandPresenceConfidence: Float =
+        SignRecognizerHelper.DEFAULT_HAND_PRESENCE_CONFIDENCE
     val currentDelegate: Int get() = _delegate
     val currentMinHandDetectionConfidence: Float
         get() =

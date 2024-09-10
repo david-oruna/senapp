@@ -21,7 +21,7 @@ plugins {
 }
 
 android {
-    namespace 'com.google.mediapipe.examples.gesturerecognizer'
+    namespace 'com.signapp'
     compileSdk 32
 
     defaultConfig {
