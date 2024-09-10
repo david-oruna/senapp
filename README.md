@@ -1,5 +1,7 @@
 ![signapp-removebg-preview](https://github.com/user-attachments/assets/7e5124c0-ca07-418f-8b64-75ee55402aed)
-![Workflow Status](https://github.com/david-oruna/signapp/actions/workflows/main.yml/badge.svg)
+![Workflow Status](https://github.com/david-oruna/signapp/actions/workflows/main.yml/badge.svg) ![License](https://img.shields.io/github/license/david-oruna/signapp) ![Version](https://img.shields.io/github/v/release/david-oruna/signapp)
+
+
 
 
 
