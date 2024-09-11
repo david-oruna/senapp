@@ -18,11 +18,13 @@ This LSTM model, since it makes time series predictions, allows to identify sign
 
 ### Testing ✅
 You can check the available signs here
+
 ![image](https://github.com/user-attachments/assets/0ecee287-c102-4a3e-967f-d3e7677861f6)
 
-### Running locally 🚀
+### Running on your device 🚀
 
-Follow the instructions in the app directory. 
+Please follow this [instructions](https://github.com/david-oruna/signapp/releases/tag/v1.0.0-beta).
+You can also run it locally on Android Studio.
 
 ### Contributions 🙌
 
